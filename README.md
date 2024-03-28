@@ -18,3 +18,16 @@ Make sure you have Node.js and npm installed on your system.
 
    ```bash
    git clone https://github.com/Mudaasirl/Daily-Word
+
+### Navigate to Project Directory 
+
+```bash
+   cd Daily-Word
+
+2. Install dependencies 
+
+ npm install
+
+3. Run
+
+ npm run dev 
