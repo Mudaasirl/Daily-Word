@@ -30,7 +30,7 @@ function WordOfDay() {
 function TodayWord({word, meaning, examples}: {word: string, meaning: string[], examples: string[]}) {
     return (
         
-<div className="border-5 border-black h-screen  grid grid-cols-6 grid-rows-4 gap-4">
+<div className="border-5 border-black h-screen  lg:grid grid-cols-6 grid-rows-4 gap-4">
     
         <div className="m-12 bg-white border-6 rounded-2xl  border-blue-800 border-b-4 border-b-black border-r-4 border-r-black col-span-4 row-span-3 ">
             <div className="grid grid-cols-6 grid-rows-6">
