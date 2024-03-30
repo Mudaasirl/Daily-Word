@@ -4,26 +4,25 @@ import {WordnikAPI} from "wordnik-api";
 const api = new WordnikAPI("9fhrqx4vgdxepxdqbiev8wfmxg07a69koryearjgwdkx9ibd2");
 const prenup = api + 'a84645sdsbsovbihsav65446'
 console.log(prenup.slice(52,56))
-import  { useState } from 'react';
+import  { useState ,useEffect} from 'react';
 
 function WordOfDay() {    
     const [word, setWord] = useState('Lorem Ipsum');
     const [definitionTexts, setDefinitionTexts] = useState(['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,']);
     const [exampleTexts, setExampleTexts] = useState(['quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur','quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur']);  
-    setWord('Lorem Ipsem');
-    setDefinitionTexts(['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,']);
-    setExampleTexts(['quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur','quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur']);
+    
 
-    // useEffect(() => {
-    //     api.getWordOfTheDay().then((response) => {
-    //         console.log(response)
-    //         const { word, definitions, examples } = response;
-    //         setWord(word);
-    //         setDefinitionTexts(definitions.slice(0,2).map(def => <p>{def.text}</p>));
-    //         setExampleTexts(examples.slice(0,2).map(ex => ex.text));
-    //         console.log(exampleTexts)
-    //     });
-    // }, []);
+    useEffect(() => {
+        api.getWordOfTheDay().then((response) => {
+            console.log(response)
+             /* @ts-ignore */
+            const { word, definitions, examples } = response;
+            setWord(word);
+            setDefinitionTexts(definitions.slice(0,2).map((def: { text: string[] ; }) => <p>{def.text}</p>));
+            setExampleTexts(examples.slice(0,2).map((ex: { text: string[]; }) => ex.text));
+            console.log(exampleTexts)
+        });
+    }, []);
 
     return <TodayWord word={word} meaning={definitionTexts} examples={exampleTexts}/>
 }
