@@ -9,7 +9,7 @@ function App() {
     
     <div className='flex flex-col grow-1   bg-white ' data-theme="mytheme">
       <Navbar/>
-      <div className=' h-screen '>          
+      <div className=' min-h-screen  '>          
         <WordOfDay/>
       </div>
       <div>
