@@ -48,7 +48,7 @@ function TodayWord({word, meaning, examples}: {word: string, meaning: string[], 
             </div>
         </div>
 
-    <div className="p-12 text-1xl text-left  pl-4 grow  col-span-2 row-span-5 col-start-5 lg:border-l-2 lg:border-l-black">
+    <div className="p-12 text-1xl text-left  pl-4 grow  col-span-2 row-span-5 col-start-5 lg:border-l-2 lg:border-l-black bg-white">
         <span className="text-2xl ">Examples</span>
          
           <ChatBubble examples={examples}></ChatBubble>
