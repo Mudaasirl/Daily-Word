@@ -7,9 +7,9 @@ import WordOfDay from './wordsection';
 function App() {
   return (
     
-    <div className='flex flex-col grow-1   bg-secondary ' data-theme="mytheme">
+    <div className='flex flex-col grow-1   bg-white ' data-theme="mytheme">
       <Navbar/>
-      <div className='bg-primary h-screen '>          
+      <div className=' h-screen '>          
         <WordOfDay/>
       </div>
       <div>

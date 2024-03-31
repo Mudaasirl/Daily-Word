@@ -31,14 +31,14 @@ function WordOfDay() {
 function TodayWord({word, meaning, examples}: {word: string, meaning: string[], examples: string[]}) {
     return (
         
-<div className="border-5 border-black h-screen  lg:grid grid-cols-6 grid-rows-4 gap-4">
-    
-        <div className="m-12 bg-white border-6 rounded-2xl  border-blue-800 border-b-4 border-b-black border-r-4 border-r-black col-span-4 row-span-3 ">
-            <div className="grid grid-cols-6 grid-rows-6">
-                <div className="border-r-4 my-6 col-span-1 row-span-7">
-                    
+<div className="lg:border-5 lg:border-black h-screen  lg:grid grid-cols-6 grid-rows-4 gap-4 ">
+      
+        <div className="h-full m-12 bg-white border-6 rounded-2xl  border-blue-800 border-b-4 border-b-black border-r-4 border-r-black col-span-4 row-span-3 ">
+            <div className="grid-cols-6 grid-rows-6 divide-x divide-blue-200  ">
+                <div className=" my-6  ">
+                                
                 </div>
-                <div className="gap-4 p-6 col-span-5 row-span-4 ">
+                <div className="lg:gap-4 p-6 col-span-5 row-span-4 ">
                     <h1 className='text-2xl text-left pt-2 pl-4 grow row-span-2 '>
                             <span> {word}</span> <br></br>
                         <p className="pt-5"> {meaning}</p>
