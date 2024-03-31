@@ -62,7 +62,7 @@ function TodayWord({word, meaning, examples}: {word: string, meaning: string[], 
 
 function ChatBubble({examples}:{ examples:string[]}){
     return (
-        <>
+        <div className="bg-white">
         <div className="chat chat-start">
   <div className="chat-image avatar">
     <div className="w-10 rounded-full">
@@ -93,7 +93,7 @@ function ChatBubble({examples}:{ examples:string[]}){
     Seen at 12:46
   </div>
 </div>
-        </>
+        </div>
     )
 }
 
