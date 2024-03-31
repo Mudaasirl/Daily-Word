@@ -6,7 +6,8 @@ import WordOfDay from './wordsection';
 
 function App() {
   return (
-    <div className='' data-theme="mytheme">
+    
+    <div className='flex flex-col grow-1   bg-secondary ' data-theme="mytheme">
       <Navbar/>
       <div className='bg-primary h-screen '>          
         <WordOfDay/>
@@ -14,8 +15,8 @@ function App() {
       <div>
         {/* <Quizsection/> */}
       </div>
-      
-    </div>
+      </div>
+    
   );
 }
 

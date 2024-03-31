@@ -9,6 +9,9 @@ export default {
       borderWidth: {
         '5': '1.5px',
         '6':'2.5px',
+      },
+      minHeight: {
+        'content': 'min-content'
       }
     }
   },
