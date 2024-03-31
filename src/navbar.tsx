@@ -36,7 +36,7 @@ function SecondNav(){
       <a className="basis-1/2 shrink-1 text-8xl lg:text-[128px]    p-4"> 
         Small Steps
       </a>           
-        <p className="font-medium text-wrap text-balance text-pretty h-full p-6 lg:p-16 text-justify shrink-1 lg:text-clip  overflow-hidden  text-1xl lg:text-1xl line-clamp-3 lg:line-clamp-none ">
+        <p className="font-medium  text-pretty h-full p-6 lg:p-16 text-justify shrink-1 lg:text-clip  overflow-hidden  text-1xl lg:text-1xl line-clamp-3 lg:line-clamp-none ">
           
 "Are you fluent in everyday English but eager to broaden your vocabulary? Our platform offers daily curated words to help intermediate speakers like you enhance their language skills effortlessly. Join us and take your English proficiency to the next level!"
         </p>

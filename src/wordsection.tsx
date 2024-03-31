@@ -4,7 +4,7 @@ import {WordnikAPI} from "wordnik-api";
 const api = new WordnikAPI("9fhrqx4vgdxepxdqbiev8wfmxg07a69koryearjgwdkx9ibd2");
 const prenup = api + 'a84645sdsbsovbihsav65446'
 console.log(prenup.slice(52,56))
-import  { useState ,useEffect, Suspense} from 'react';
+import  { useState ,useEffect} from 'react';
 
 function WordOfDay() {    
   const [word, setWord] = useState(null);
